@@ -1,0 +1,106 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.0</TargetFramework>
+    <DockerDefaultTargetOS>Linux</DockerDefaultTargetOS>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Include="api\WebRequests.fs" />
+    <Compile Include="business\Models.fs" />
+    <Compile Include="business\Common.fs" />
+    <None Include="business\prediction_data_sample.csv" />
+    <Compile Include="business\python\LocalPythonStrategy.fs" />
+    <Content Include="business\ibm\ibm_token_result_sample_json" />
+    <Content Include="business\ibm\ibm_result_sample_json" />
+    <Compile Include="business\ibm\IbmStrategy.fs" />
+    <Content Include="business\azure\prediction_response_sample_json" />
+    <Compile Include="business\azure\AzureStrategy.fs" />
+    <Compile Include="business\filter\Filter.fs" />
+    <Content Include="business\data\files\gl1\templatePages.csv">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="business\python\python_result_sample_json" />
+    <None Include="business\mlnet\modelRanking.onnx">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="business\mlnet\modelFilter.onnx">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="business\mlnet\preperationModel.zip">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <Compile Include="business\mlnet\MlNetStrategy.fs" />
+    <None Include="business\data\files\sample\templatePages.csv" />
+    <Content Include="business\data\files\welle5\templatePages.csv">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="business\data\files\welle6\templatePages.csv">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Compile Include="business\data\Data.fs" />
+    <Compile Include="business\ranking\Rank.fs" />
+    <Compile Include="business\StrategyHelper.fs" />
+    <Compile Include="controllers\RecommendController.fs" />
+    <Compile Include="Startup.fs" />
+    <Compile Include="Program.fs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="Dockerfile" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="FSharp.Data" Version="3.3.2" />
+    <PackageReference Include="FSharp.SystemTextJson" Version="0.6.2" />
+    <PackageReference Include="Microsoft.ML" Version="1.4.0" />
+    <PackageReference Include="Microsoft.ML.OnnxTransformer" Version="1.4.0" />
+    <PackageReference Include="Microsoft.VisualStudio.Azure.Containers.Tools.Targets" Version="1.9.5" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Update="python_tokenizer\tokenizer_structure01.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Update="python_tokenizer\tokenizer_structure01_words.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Update="python_tokenizer\tokenizer_structure02.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Update="python_tokenizer\tokenizer_structure02_words.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Update="python_tokenizer\tokenizer_structure03.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Update="python_tokenizer\tokenizer_structure03_words.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Update="python_tokenizer\tokenizer_structure04.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Update="python_tokenizer\tokenizer_structure04_words.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Update="python_tokenizer\tokenizer_structure05.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Update="python_tokenizer\tokenizer_structure05_words.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Update="python_tokenizer\tokenizer_structure06.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Update="python_tokenizer\tokenizer_structure06_words.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Update="python_tokenizer\tokenizer_structure07.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Update="python_tokenizer\tokenizer_structure07_words.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+
+</Project>

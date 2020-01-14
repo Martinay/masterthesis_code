@@ -1,0 +1,1 @@
+{"class_name": "Tokenizer", "config": {"num_words": "50", "filters": "", "lower": true, "split": " ", "char_level": true, "oov_token": null, "document_count": 79677, "word_counts": "{}", "word_docs": "{}", "index_docs": "{}", "index_word": "{}", "word_index": "{}"}}

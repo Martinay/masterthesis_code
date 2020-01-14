@@ -1,0 +1,28 @@
+﻿[
+  {
+    "structure03": "abc",
+    "structure01": "uautt3uua",
+    "structure02": "abc",
+    "structure05": "abc",
+    "structure04": "abc",
+    "structure06": "def",
+    "structure07": "bcd",
+    "SlotGuid": "1882b101-1234-1234-1234-4bd5bb733014",
+    "Templateguids": [
+      "f6642389-1234-1234-1234-3d9a746c516c"
+    ]
+  },
+  {
+    "structure03": null,
+    "structure01": null,
+    "structure02": null,
+    "structure05": null,
+    "structure04": null,
+    "structure06": null,
+    "structure07": null,
+    "SlotGuid": "8393a219-0cc8-4583-9049-a11d360fa60c",
+    "Templateguids": [
+      "e185c131-466b-4e35-91df-1d3ee30186e1"
+    ]
+  }
+]

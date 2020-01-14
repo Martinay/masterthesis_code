@@ -1,0 +1,13 @@
+﻿{
+  "trace": "4544694b66920888f044450db667eaad",
+  "errors": [
+    {
+      "code": "expired_authorization_token",
+      "message": "Expired authorization token.",
+      "target": {
+        "type": "header",
+        "name": "Authorization"
+      }
+    }
+  ]
+}
